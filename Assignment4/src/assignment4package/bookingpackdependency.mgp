@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Package name="application" x="773" y="192"/>
+    <Package name="assignment4package" x="705" y="520">
+        <DependencyLink destination="model">
+            <Point x="781" y="763"/>
+            <Point x="128" y="771"/>
+        </DependencyLink>
+        <DependencyLink destination="application"/>
+        <DependencyLink destination="util"/>
+    </Package>
+    <Package name="model" x="84" y="569">
+        <DependencyLink destination="assignment4package"/>
+        <DependencyLink destination="util"/>
+        <DependencyLink destination="sharedpackage"/>
+    </Package>
+    <Package name="sharedpackage" x="68" y="289"/>
+    <Package name="util" x="588" y="147"/>
+</PackageAnalysis>

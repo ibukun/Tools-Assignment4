@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="assignment4package.DateUtil" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assignment4package.HotelDAO" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.AbstractDAO"/>
+    </Class>
+    <Class name="assignment4package.Booking" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.Entity"/>
+        <Association
+            destinationClassName="assignment4package.BookingRepository"
+            endpointName="repository" kind="Simple"/>
+        <Association destinationClassName="assignment4package.Guest"
+            endpointName="guests" kind="Simple"/>
+        <Association destinationClassName="assignment4package.Hotel"
+            endpointName="hotel" kind="Simple"/>
+        <Association destinationClassName="assignment4package.Room"
+            endpointName="room" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.DateUtil"/>
+        <Communication destinationClassName="assignment4package.Hotel"/>
+        <Communication destinationClassName="assignment4package.Guest"/>
+    </Class>
+    <Class name="assignment4package.RepositoryException" x="255" y="373">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assignment4package.Entity" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assignment4package.HotelControllerTest" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="assignment4package.HotelController"
+            endpointName="controller" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.HotelController"/>
+    </Class>
+    <Class name="assignment4package.BookingService" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assignment4package.HotelRate" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.Entity"/>
+    </Class>
+    <Class name="assignment4package.Hotel" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.Entity"/>
+        <Association destinationClassName="assignment4package.HotelRate"
+            endpointName="rate" kind="Simple"/>
+        <Association
+            destinationClassName="assignment4package.HotelRepository"
+            endpointName="repository" kind="Simple"/>
+        <Association
+            destinationClassName="assignment4package.HotelChain"
+            endpointName="hotelChain" kind="Simple"/>
+        <Association destinationClassName="assignment4package.Room"
+            endpointName="rooms" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.HotelRepository"/>
+    </Class>
+    <Class name="assignment4package.GuestRepository" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assignment4package.BookingRepository" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assignment4package.BookingServiceImpl" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.BookingService"/>
+        <Association
+            destinationClassName="assignment4package.BookingRepository"
+            endpointName="bookingRepository" kind="Simple"/>
+        <Association
+            destinationClassName="assignment4package.HotelRepository"
+            endpointName="hotelRepository" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.Booking"/>
+    </Class>
+    <Class name="assignment4package.HotelRepositoryImpl" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.HotelRepository"/>
+        <Association destinationClassName="assignment4package.HotelDAO"
+            endpointName="dao" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.HotelDAO"/>
+    </Class>
+    <Class name="assignment4package.BookingTest" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="assignment4package.Booking"
+            endpointName="booking" kind="Simple"/>
+    </Class>
+    <Class name="assignment4package.HotelTest" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="assignment4package.Hotel"
+            endpointName="hotel" kind="Simple"/>
+    </Class>
+    <Class name="assignment4package.AbstractDAO" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assignment4package.HotelController" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="assignment4package.BookingService"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.BookingService"/>
+    </Class>
+    <Class name="assignment4package.HotelRepository" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="assignment4package.GuestDAO" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.AbstractDAO"/>
+    </Class>
+    <Class name="assignment4package.Room" x="627" y="453">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.Entity"/>
+        <Association destinationClassName="assignment4package.Hotel"
+            endpointName="hotel" kind="Simple"/>
+    </Class>
+    <Class name="assignment4package.BookingRepositoryImpl" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.BookingRepository"/>
+    </Class>
+    <Class name="assignment4package.HotelChain" x="273" y="211">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.Entity"/>
+    </Class>
+    <Class name="assignment4package.Guest" x="558" y="123">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.Entity"/>
+        <Association
+            destinationClassName="assignment4package.GuestRepository"
+            endpointName="repository" kind="Simple"/>
+        <Association
+            destinationClassName="assignment4package.LoyatyProgram"
+            endpointName="loyatyProgram" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.GuestRepository"/>
+    </Class>
+    <Class name="assignment4package.LoyatyProgram" x="618" y="259">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="assignment4package.Entity"/>
+    </Class>
+</ClassDiagram>

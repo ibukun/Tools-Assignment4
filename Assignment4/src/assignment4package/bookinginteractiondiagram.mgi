@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass name="assignment4package.DateUtil" x="818" y="524"/>
+    <CommunicationClass name="assignment4package.Booking" x="633" y="503">
+        <Association destinationClassName="assignment4package.Guest"
+            endpointName="guests" kind="Simple"/>
+        <Association destinationClassName="assignment4package.Hotel"
+            endpointName="hotel" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.DateUtil"/>
+        <Communication destinationClassName="assignment4package.Hotel"/>
+        <Communication destinationClassName="assignment4package.Guest"/>
+    </CommunicationClass>
+    <CommunicationClass name="assignment4package.HotelDAO" x="350" y="90"/>
+    <CommunicationClass name="assignment4package.BookingService"
+        x="1094" y="169"/>
+    <CommunicationClass name="assignment4package.HotelControllerTest"
+        x="622" y="64">
+        <Association
+            destinationClassName="assignment4package.HotelController"
+            endpointName="controller" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.HotelController"/>
+    </CommunicationClass>
+    <CommunicationClass name="assignment4package.BookingServiceImpl"
+        x="841" y="273">
+        <Association
+            destinationClassName="assignment4package.HotelRepository"
+            endpointName="hotelRepository" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.Booking"/>
+    </CommunicationClass>
+    <CommunicationClass name="assignment4package.GuestRepository"
+        x="443" y="352"/>
+    <CommunicationClass name="assignment4package.Hotel" x="148" y="228">
+        <Association
+            destinationClassName="assignment4package.HotelRepository"
+            endpointName="repository" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.HotelRepository"/>
+    </CommunicationClass>
+    <CommunicationClass name="assignment4package.HotelRepositoryImpl"
+        x="52" y="94">
+        <Extension destinationClassName="assignment4package.HotelRepository"/>
+        <Association destinationClassName="assignment4package.HotelDAO"
+            endpointName="dao" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.HotelDAO"/>
+    </CommunicationClass>
+    <CommunicationClass name="assignment4package.HotelController"
+        x="785" y="165">
+        <Association
+            destinationClassName="assignment4package.BookingService"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.BookingService"/>
+    </CommunicationClass>
+    <CommunicationClass name="assignment4package.HotelRepository"
+        x="120" y="553"/>
+    <CommunicationClass name="assignment4package.Guest" x="535" y="135">
+        <Association
+            destinationClassName="assignment4package.GuestRepository"
+            endpointName="repository" kind="Simple"/>
+        <Communication destinationClassName="assignment4package.GuestRepository"/>
+    </CommunicationClass>
+</ClassDiagram>
